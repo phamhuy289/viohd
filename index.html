@@ -10,7 +10,7 @@
 <body>
     <script>
     function data() {var vars={};window.location.href.replace(/[?&#]+([^=&#]+)=([^&#]*)/gi,function(i,key,value){vars[key]=value});return vars};
-    var q = data()['s']?'/search/?q='+data()['q']:'/';
+    var q = data()['q']?'/search/?q='+data()['q']:'/';
     location.assign('http://viohd.blogspot.com'+q); 
   </script>
 </body>
