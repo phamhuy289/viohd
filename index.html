@@ -9,7 +9,8 @@
 </head>
 <body>
     <script>
-    location.assign("http://viohd.blogspot.com/"); 
+    var s = window.location.pathname.includes('tt')?'/search/?q='+window.location.pathname.split('/')[1]:'/';
+    location.assign('http://viohd.blogspot.com'+s); 
   </script>
 </body>
 
